@@ -1,9 +1,4 @@
 
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import sys
-
 def steepestDescent(par, A, d, c, verbose=False, alpha=0.01, tol=1e-6):
 
     # par = np.array([4, 5])
@@ -45,9 +40,3 @@ def steepestDescent(par, A, d, c, verbose=False, alpha=0.01, tol=1e-6):
     # Round the answer. 
     par_k1 = np.round(par_k1, 4)
     return par_k1, ans
-
-par = np.array([4, 5])
-A = np.array([[10, -6], [-6, 10]])
-d = np.array([4, 4])
-c = 0
-xStar, conv = steepestDescent(par, A, d, c)
